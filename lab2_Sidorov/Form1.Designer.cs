@@ -46,12 +46,18 @@
             this.label_C_2 = new System.Windows.Forms.Label();
             this.label_C_10 = new System.Windows.Forms.Label();
             this.label_C_hex = new System.Windows.Forms.Label();
+            this.textBox_C_OUT = new System.Windows.Forms.TextBox();
+            this.textBox_Key_OUT = new System.Windows.Forms.TextBox();
+            this.textBox_P_OUT = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1_Xor_encoder.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_XOR_Click
             // 
-            this.button_XOR_Click.Location = new System.Drawing.Point(395, 90);
+            this.button_XOR_Click.Location = new System.Drawing.Point(155, 235);
             this.button_XOR_Click.Name = "button_XOR_Click";
             this.button_XOR_Click.Size = new System.Drawing.Size(75, 23);
             this.button_XOR_Click.TabIndex = 0;
@@ -61,6 +67,12 @@
             // 
             // groupBox1_Xor_encoder
             // 
+            this.groupBox1_Xor_encoder.Controls.Add(this.label3);
+            this.groupBox1_Xor_encoder.Controls.Add(this.label2);
+            this.groupBox1_Xor_encoder.Controls.Add(this.label1);
+            this.groupBox1_Xor_encoder.Controls.Add(this.textBox_P_OUT);
+            this.groupBox1_Xor_encoder.Controls.Add(this.textBox_Key_OUT);
+            this.groupBox1_Xor_encoder.Controls.Add(this.textBox_C_OUT);
             this.groupBox1_Xor_encoder.Controls.Add(this.label_C_2);
             this.groupBox1_Xor_encoder.Controls.Add(this.label_C_10);
             this.groupBox1_Xor_encoder.Controls.Add(this.label_C_hex);
@@ -80,7 +92,7 @@
             this.groupBox1_Xor_encoder.Controls.Add(this.button_XOR_Click);
             this.groupBox1_Xor_encoder.Location = new System.Drawing.Point(12, 21);
             this.groupBox1_Xor_encoder.Name = "groupBox1_Xor_encoder";
-            this.groupBox1_Xor_encoder.Size = new System.Drawing.Size(553, 231);
+            this.groupBox1_Xor_encoder.Size = new System.Drawing.Size(600, 278);
             this.groupBox1_Xor_encoder.TabIndex = 1;
             this.groupBox1_Xor_encoder.TabStop = false;
             this.groupBox1_Xor_encoder.Text = "XOR Encoder";
@@ -138,7 +150,7 @@
             // 
             // button_Clear
             // 
-            this.button_Clear.Location = new System.Drawing.Point(395, 133);
+            this.button_Clear.Location = new System.Drawing.Point(261, 235);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(75, 23);
             this.button_Clear.TabIndex = 1;
@@ -239,11 +251,59 @@
             this.label_C_hex.Text = "hex";
             this.label_C_hex.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // textBox_C_OUT
+            // 
+            this.textBox_C_OUT.Location = new System.Drawing.Point(423, 43);
+            this.textBox_C_OUT.Name = "textBox_C_OUT";
+            this.textBox_C_OUT.Size = new System.Drawing.Size(100, 22);
+            this.textBox_C_OUT.TabIndex = 17;
+            // 
+            // textBox_Key_OUT
+            // 
+            this.textBox_Key_OUT.Location = new System.Drawing.Point(423, 101);
+            this.textBox_Key_OUT.Name = "textBox_Key_OUT";
+            this.textBox_Key_OUT.Size = new System.Drawing.Size(100, 22);
+            this.textBox_Key_OUT.TabIndex = 18;
+            // 
+            // textBox_P_OUT
+            // 
+            this.textBox_P_OUT.Location = new System.Drawing.Point(423, 177);
+            this.textBox_P_OUT.Name = "textBox_P_OUT";
+            this.textBox_P_OUT.Size = new System.Drawing.Size(100, 22);
+            this.textBox_P_OUT.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(536, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 16);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "= С";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(536, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 16);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "= Key";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(536, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 16);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "= P";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 282);
+            this.ClientSize = new System.Drawing.Size(667, 325);
             this.Controls.Add(this.groupBox1_Xor_encoder);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -273,6 +333,12 @@
         private System.Windows.Forms.Label label_P_2;
         private System.Windows.Forms.Label label_P_10;
         private System.Windows.Forms.Label label_P_hex;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox_P_OUT;
+        private System.Windows.Forms.TextBox textBox_Key_OUT;
+        private System.Windows.Forms.TextBox textBox_C_OUT;
     }
 }
 

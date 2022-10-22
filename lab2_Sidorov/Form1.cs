@@ -40,12 +40,24 @@ namespace lab2_Sidorov
             label_C_10.Text = Convert.ToString(intC, 10);
             label_C_2.Text = Convert.ToString(intC, 2);
 
+            textBox_C_OUT.Text = textBox_C.Text;
+            textBox_Key_OUT.Text = textBox_Key.Text;
+            textBox_P_OUT.Text = textBox_P.Text;
+
+
+
         }
         private void button_Clear_Click(object sender, EventArgs e)
         {
             textBox_P.Text = "";
             textBox_Key.Text = "";
             textBox_C.Text = "";
+
+            textBox_C_OUT.Text = "";
+            textBox_Key_OUT.Text = "";
+            textBox_P_OUT.Text = "";
+
+
 
             label_P_hex.Text = "hex";
             label_P_10.Text = "dec";
@@ -58,6 +70,9 @@ namespace lab2_Sidorov
             label_C_hex.Text = "hex";
             label_C_10.Text = "dec";
             label_C_2.Text = "bin";
+
+
+
         }
     }
 }
