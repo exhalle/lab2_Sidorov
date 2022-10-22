@@ -27,12 +27,37 @@ namespace lab2_Sidorov
             int intC = intP ^ intKey;
             string strC = Convert.ToString(intC, 16);
             textBox_C.Text = strC;
+
+            label_P_hex.Text = Convert.ToString(intP, 16);
+            label_P_10.Text = Convert.ToString(intP, 10);
+            label_P_2.Text = Convert.ToString(intP, 2);
+
+            label_key_hex.Text = Convert.ToString(intKey, 16);
+            label_key_10.Text = Convert.ToString(intKey, 10);
+            label_key_2.Text = Convert.ToString(intKey, 2);
+
+            label_C_hex.Text = Convert.ToString(intC, 16);
+            label_C_10.Text = Convert.ToString(intC, 10);
+            label_C_2.Text = Convert.ToString(intC, 2);
+
         }
         private void button_Clear_Click(object sender, EventArgs e)
         {
             textBox_P.Text = "";
             textBox_Key.Text = "";
             textBox_C.Text = "";
+
+            label_P_hex.Text = "hex";
+            label_P_10.Text = "dec";
+            label_P_2.Text = "bin";
+
+            label_key_hex.Text = "hex";
+            label_key_10.Text = "dec";
+            label_key_2.Text = "bin";
+
+            label_C_hex.Text = "hex";
+            label_C_10.Text = "dec";
+            label_C_2.Text = "bin";
         }
     }
 }
